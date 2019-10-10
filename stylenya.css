@@ -1,0 +1,40 @@
+body{
+	background-image:url("bgsignup.jpg");
+	background-size: 1370px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.Welcome{
+	text-align: left;
+}
+h1{
+	color: white;
+	margin-left: 73%;
+	font-family: Algerian;
+	color: black;
+	font-size: 40px;
+}
+h2{
+	color: white;
+}
+input{
+	border-radius: 8px;
+	width: 300px;
+	height: 20px;
+	background-color:white;
+}
+.box{
+	margin-left: 65%;
+}
+button{
+	background-color: #95e8a0;
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	width: 90px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: 5%;
+	margin-left: 25%;
+}
