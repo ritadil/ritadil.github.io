@@ -1,1 +1,0 @@
-# ritadil.github.io
