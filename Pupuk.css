@@ -1,0 +1,57 @@
+body {
+	background: url(pupukkk.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrap{
+	margin-left: -30%;
+}
+li{
+	margin-left: 65%;
+}
+
+nav{
+	opacity: 100%;
+	text-align: right;
+	font-family: Georgia;
+	font-size: 23px;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+	margin-right: 3%;
+}
+.form {
+	background: #DAF7A6;
+	margin-left: 100px;
+	position: absolute;
+	top: 0;
+	border-radius: 20px;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	left: 0;
+	box-sizing: border-box;
+	padding: 100px;
+	width: 400px;
+	height: 600px;
+	font-family: cursive; 
+}
+
+button {
+	background-color: #95e8a0;
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+img{
+	margin-left: 800px;
+	height: 600px
+}
