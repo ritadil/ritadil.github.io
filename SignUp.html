@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+
+</head>
+
+<body>
+
+<div class="wrap">
+	<nav class="beranda">
+		<ul>
+			<li>
+				<a href="Profil.html">PROFIL</a>
+				<a href="Berandaa.html">BERANDA</a>
+				<a href="berita.html">BERITA</a>
+				<a href="Pupuk.html">PUPUK</a>
+				<a href="about.html">ABOUT</a>               
+			</li>
+		</ul>
+	</nav>
+
+</div>
+
+
+<div class="welcome">
+<h1>Welcome Back!!</h1> <br>
+<h4>"Untuk hasil panen berkualitas, yuk!</h4>
+<h4>bergabung dengan kami"</h4>
+<a href="Berandaa.html"><b><button type="button">Login</button></b></a>
+</div>
+
+<div class="create">
+<h1>CREATE ACCOUNT</h1> <br>
+<a href="https://id-id.facebook.com/"><img src="facebook.png" width="3%"></a>
+<a href="https://aboutme.google.com/u/0/?referer=gplus"><img src="gplus.png" width="3%"></a>
+<a href="https://accounts.google.com › ServiceLogin"><img src="google.png" width="3%"></a>
+	<p>Atau bergabung dengan emailmu:</p>
+	<form>
+		<input type="text" name="nama" placeholder="Nama"> <br>
+		<input type="text" name="email" placeholder="Email"> <br>
+		<input type="password" name="password" placeholder="Password" id="password"> <br> <br>
+		<a href="BerandaL.html"><b><button type="button">Sign Up</button></b></a>
+	</form>
+	<div id="message">
+		<h3>Password harus mengandung:</h3>
+		<p id="letter" class="invalid"><b>Huruf Kecil</b></p>
+		<p id="capital" class="invalid"><b>Huruf Kapital</b></p>
+		<p id="number" class="invalid"><b>Angka</b></p>
+		<p id="length" class="invalid">Minimal<b>8 characters</b></p>
+	</div>
+	<script>
+		var myInput = document.getElementById("password");
+		var letter = document.getElementById("letter");
+		var capital = document.getElementById("capital");
+		var number = document.getElementById("number");
+		var length = document.getElementById("length");
+		myInput.onfocus = function() {
+			document.getElementById("message").style.display = "block";
+		}
+		myInput.onblur = function() {
+			document.getElementById("message").style.display = "none";
+		}
+		myInput.onkeyup = function() {
+			var lowerCaseLetters = /[a-z]/g;
+			if(myInput.value.match(HurufKecil)) {
+				letter.classList.remove("invalid");
+				letter.classList.add("valid");
+			} 
+			else {
+				letter.classList.remove("valid");
+				letter.classList.add("invalid");
+			}
+			var upperCaseLetters = /[A-Z]/g;
+			if(myInput.value.match(HurufKapital)) {
+				capital.classList.remove("invalid");
+				capital.classList.add("valid");
+			} else {
+				capital.classList.remove("valid");
+				capital.classList.add("invalid");
+			}
+			var numbers = /[0-9]/g;
+			if(myInput.value.match(Angka)) {
+				number.classList.remove("invalid");
+				number.classList.add("valid");
+			} else {
+				number.classList.remove("valid");
+				number.classList.add("invalid");
+			}
+			if(myInput.value.length >= 8) {
+				length.classList.remove("invalid");
+				length.classList.add("valid");
+			} else {
+				length.classList.remove("valid");
+				length.classList.add("invalid");
+			}
+		}
+
+	</script>
+</div>
+
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
