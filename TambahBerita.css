@@ -1,0 +1,36 @@
+body{
+    background-image:url(LO.png);
+    padding: 5%;
+    background-size: 1370px;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+    font-family: Remachine Script Personal Use;
+    font-size: 65px;
+}
+#title{
+    border-radius: 8px;
+}
+#body{
+    border-radius: 8px;
+}
+#Kirim{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    font-family: 'Lucida Sans Unicode';
+    ;
+}
+ a{
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+	margin-right: 5%;
+	
+}
+li{
+    margin-top: -5%;
+    margin-left: 60%;
+}

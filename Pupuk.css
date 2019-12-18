@@ -1,0 +1,85 @@
+body {
+<<<<<<< HEAD
+	background: url(download.jpg);
+	background-repeat: no-repeat;
+	background-size: 1370px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+=======
+	background: url(pupukkk.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+>>>>>>> 0481d5ab8f456c911c351a2b44dd9bee799831d6
+}
+.wrap{
+	margin-left: -30%;
+}
+li{
+	margin-left: 65%;
+}
+
+nav{
+	opacity: 100%;
+	text-align: right;
+	font-family: Georgia;
+	font-size: 23px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	margin-right: 3%;
+}
+.form {
+	background: #DAF7A6;
+	margin-left: 100px;
+	position: absolute;
+	top: 0;
+	border-radius: 20px;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	left: 0;
+	box-sizing: border-box;
+<<<<<<< HEAD
+	padding: 20px;
+	width: 400px;
+	height: 500px;
+=======
+	padding: 100px;
+	width: 400px;
+	height: 600px;
+>>>>>>> 0481d5ab8f456c911c351a2b44dd9bee799831d6
+	font-family: cursive; 
+}
+
+button {
+	background-color: #95e8a0;
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+img{
+	margin-left: 800px;
+	height: 600px
+<<<<<<< HEAD
+}
+p{
+	text-align: center;
+	font-family: Franklin Gothic Heavy;
+	font-size: 20px;
+}
+.wrap.img{
+	width: 30px;
+	height: 30px;
+}
+=======
+}
+>>>>>>> 0481d5ab8f456c911c351a2b44dd9bee799831d6

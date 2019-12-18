@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tambah Berita</title>
+    <link rel="stylesheet" type="text/css" href="TambahBerita.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+</head>
+    <body>
+        <div class="wrap">
+            <nav class="about">
+                <ul type="none">
+                    <li>
+                        <a href="Profil.html">PROFIL</a>
+                        <a href="Berandaa.html">BERANDA</a>
+                        <a href="berita.html">BERITA</a>
+                        <a href="Pupuk.html">PUPUK</a>
+                        <a href="about.html">ABOUT</a>             
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+        <center>
+
+            <h1>Tambah Berita</h1>
+            <form method="POST" onsubmit="return sendData()">
+                <p>
+                    <label><b>Judul</b></label>
+                    <input type="text" id="title" placeholder="Judul Berita">
+                </p>
+                <p>
+                    <label><b>Isi Berita</label></b><br>
+            <textarea id="body" placeholder="isi berita" cols="50" rows="10"></textarea>
+        </p>
+        <input id="Kirim" type="submit" value="Kirim">
+        </form>
+
+    <script>
+        function sendData() {
+            var xhr = new XMLHttpRequest();
+            var url = "https://jsonplaceholder.typicode.com/posts";
+
+            var data = JSON.stringify({
+                title: document.getElementById("title").value,
+                body: document.getElementById("body").value,
+                userId: 1
+            });
+
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onload = function () {               
+                console.log (this.responseText);
+            };
+
+            xhr.send(data);
+            return false;
+        }
+    </script>
+        </center>
+        <div align ="center"> 
+        <form method="post" action="" enctype="multipart/form-data"
+                id="myform"> 
+   
+            <div > 
+                <input type="file" id="file" name="file" /> 
+                <input type="button" class="button" value="Upload"
+                        id="but_upload"> 
+            </div> 
+        </form> 
+    </div>     
+       
+    <script type="text/javascript"> 
+        $(document).ready(function() { 
+            $("#but_upload").click(function() { 
+                var fd = new FormData(); 
+                var files = $('#file')[0].files[0]; 
+                fd.append('file', files); 
+       
+                $.ajax({ 
+                    url: 'upload.php', 
+                    type: 'post', 
+                    data: fd, 
+                    contentType: false, 
+                    processData: false, 
+                    success: function(response){ 
+                        if(response != 0){ 
+                           alert('file uploaded'); 
+                        } 
+                        else{ 
+                            alert('file not uploaded'); 
+                        } 
+                    }, 
+                }); 
+            }); 
+        }); 
+    </script> 
+    </body>
+</html>

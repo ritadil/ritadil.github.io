@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+	<form>
+		<br><br>
+		<h1>LOGIN</h1>
+		<input type="text" name="username" required placeholder="Username" size="40"><br><br>
+		<input type="password" name="password" placeholder="Password" size="40" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password harus menggunakan huruf kapital, huruf kecil, angka, and lebih dari 8 karakter" required> <br><br><br><br>
+		<!-- <a href="BerandaL.html"> -->
+		<button id="myBtn">Login</button>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Anda belum memiliki Akun. Silahkan Daftar Terlebih Dahulu!</p>
+		</div>
+
+		</div>
+		<p>Belum punya akun? <a href="Signup.html"> Sign Up </a> </p> 
+		<p>Atau</p>
+		<img src="facebook.png" width="3%">      <img src="gplus.png" width="3%">       <img src="google.png" width="3%">
+	</form>
+<<<<<<< HEAD
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+	</script>	
+=======
+	<div id="message">
+		<h3>Password harus mengandung:</h3>
+		<p id="letter" class="invalid"><b>Huruf Kecil</b></p>
+		<p id="capital" class="invalid"><b>Huruf Kapital</b></p>
+		<p id="number" class="invalid"><b>Angka</b></p>
+		<p id="length" class="invalid">Minimal <b>8 characters</b></p>
+	</div>
+	<script>
+		var myInput = document.getElementById("password");
+		var letter = document.getElementById("letter");
+		var capital = document.getElementById("capital");
+		var number = document.getElementById("number");
+		var length = document.getElementById("length");
+		myInput.onfocus = function() {
+			document.getElementById("validation").style.display = "block";
+}
+		myInput.onblur = function() {
+			document.getElementById("validation").style.display = "none";
+}
+
+myInput.onkeyup = function() {
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+	</script>
+</div>
+>>>>>>> 0481d5ab8f456c911c351a2b44dd9bee799831d6
+</body>
+</html>
